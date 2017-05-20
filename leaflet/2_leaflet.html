@@ -79,11 +79,11 @@ section:last-child {
 var map = L.map('map').setView([34.0622, -118.2680], 13);
 
 //This function adds a layer to the map, this layer would be added first, known as a base layer. Additional layers can be added on top.    
-/*
+
 L.tileLayer('http://d.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
     attribution: '<a target="_top" href="http://stamen.com">Stamen Design, under CC BY 3.0, data by OSM</a>'
 }).addTo(map);
-*/
+
 
 //This function adds a tile layer from remote sources like the David Rumsey Map Collection, remove the "/*" at the beginning and "*/" at the end to activate.
 /*
@@ -95,9 +95,7 @@ L.tileLayer('http://maps.georeferencer.com/georeferences/236482959682/2017-02-20
 //Here are other tiles you can switch, make sure you change the attribution to the source.
 //Stamen Toner-Lite | http://d.tile.stamen.com/toner-lite/{z}/{x}/{y}.png | <a target="_top" href="http://stamen.com">Stamen Design, under CC BY 3.0, data by OSM</a>
 //Stamen Watercolor | http://d.tile.stamen.com/watercolor/{z}/{x}/{y}.png | <a href="http://stamen.com">Stamen Design under CC BY 3.0, data by OSM</a>
-L.tileLayer('http://d.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
-    attribution: '<a target="_top" href="http://stamen.com">Stamen Design, under CC BY 3.0, data by OSM</a>'
-}).addTo(map);
+
 //This are the locations for your map to move along with your story
 //This is variable created an object called an JSON, you can add and remove chapters to the story. Make sure you reflect the changes in the sections with the text of your story.    
 var chapters = {
