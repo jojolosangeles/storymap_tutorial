@@ -182,8 +182,12 @@ function setActiveChapter(chapterName) {
 
 function isElementOnScreen(id) {
     var element = document.getElementById(id);
-    var bounds = element.getBoundingClientRect();
-    return bounds.top < window.innerHeight && bounds.bottom > 0;
+    if (element) {
+        var bounds = element.getBoundingClientRect();
+        return bounds.top < window.innerHeight && bounds.bottom > 0;
+    } else {
+        console.log("could not find element " + id);
+    }
 }
 //End of function to run the story    
     
